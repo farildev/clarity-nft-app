@@ -97,11 +97,13 @@ header{
 }
 main{
     .banner__section{
-        height: 80vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
         .banner__container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             .banner__left{
                 max-width: 45%;
                 .icon__text{
@@ -146,6 +148,57 @@ main{
                         i{
                             font-size: 24px;
                             margin-left: 5px;
+                        }
+                    }
+                }
+            }
+            .banner__right{
+                max-width: 45%;
+                .banner__carousel{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .carousel__box{
+                        width: 252px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        background-color: $light-color;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
+                        -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
+                        -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
+                        .carousel__img{
+                            img{
+                                width: 100%;
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+                            }
+                        }
+                        .carousel__about{
+                            padding: 1rem 2rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            a{
+                                color: $light-dark-color;
+                            }
+                            .price{
+                                margin-top: 10px;
+                                color: $dark-color;
+                                font-size: 20px;
+                            }
+                            button{
+                                background-color: $pink-color;
+                                border: none;
+                                outline: none;
+                                color: $light-color;
+                                padding: 0.8rem 1.5rem;
+                                border-radius: 5px;
+                                margin-top: 10px;
+                            }
                         }
                     }
                 }
