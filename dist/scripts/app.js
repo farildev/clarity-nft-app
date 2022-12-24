@@ -4,6 +4,7 @@ $('.banner__carousel').slick({
     slidesToScroll: 2,
     autoplay: true,
     centerPadding: '20px',
+    centerMode: true,
     arrows: false,
     dots: true,
     responsive: [
