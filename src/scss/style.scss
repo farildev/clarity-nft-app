@@ -37,7 +37,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     .navbar{
         display: flex;
         justify-content: space-between;
@@ -69,7 +69,7 @@ header{
                 padding: 0.7rem 1.5rem;
                 border-radius: 5px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: flex-start;
                 align-items: center;
                 border: 1px solid #999;
                 i{
@@ -100,7 +100,10 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background: rgb(243,222,255);
+        background: linear-gradient(90deg, rgba(243,222,255,1) 0%, rgba(218,218,247,1) 35%, rgba(154,237,254,1) 69%, rgba(0,212,255,1) 100%);
         .banner__container{
+            height: 87vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -159,6 +162,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     .carousel__box{
+                        margin: 0 5px;
                         width: 252px;
                         display: flex;
                         justify-content: center;
@@ -197,10 +201,97 @@ main{
                                 color: $light-color;
                                 padding: 0.8rem 1.5rem;
                                 border-radius: 5px;
-                                margin-top: 10px;
+                                margin-top: 15px;
+                                font-family: inherit;
+                                font-weight: 500;
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+    .category__section{
+        margin-top: 80px;
+        .category__container{
+            .category__title{
+                i{
+                    background-color: $pink-color;
+                    color: $light-color;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+                .category{
+                    color: $pink-color;
+                    margin-left: 10px;
+                }
+            }
+            .category__header{
+                margin-top: 10px;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+            }
+            .category__carousel{
+                width: 100%;
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .category__box{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    background-color: $light-color;
+                    padding: 1rem;
+                    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.13);
+                    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.13);
+                    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.13);
+                    border: 1px solid #f6f6f6;
+                    border-radius: 5px;
+                    .category__img{
+                        width: 134px;
+                        height: 88px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                            border-radius: 3px;
+                        }
+                    }
+                    .category__name{
+                        margin-top: 15px;
+                        h3{
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .seller__section{
+        margin-top: 120px;
+        .seller__container{
+            .seller__title{
+                i{
+                    background-color: $purple-color;
+                    color: $light-color;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+                span{
+                    color: $purple-color;
+                    margin-left: 10px;
+                }
+            }
+            .seller__header{
+                margin-top: 10px;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
                 }
             }
         }
