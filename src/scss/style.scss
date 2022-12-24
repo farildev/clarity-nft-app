@@ -46,6 +46,10 @@ header{
             align-items: center;
             .nav__item{
                 margin: 0 10px;
+                .nav__link{
+                    color: $dark-color;
+                    font-weight: 400;
+                }
             }
         }
         .nav__icons{
@@ -54,6 +58,32 @@ header{
             align-items: center;
             .searchbar{
                 margin-right: 50px;
+                background-color: #f6f6f6;
+                padding: 0.8rem 1.6rem;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    margin-right: 20px;
+                    color: $light-dark-color;
+                }
+                input{
+                    color: $light-dark-color;
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    font-family: inherit;
+                }
+            }
+            .icons{
+                a{
+                    margin: 0 10px;
+                    color: $light-dark-color;
+                    i{
+                        font-size: 18px;
+                    }
+                }
             }
         }
     }
