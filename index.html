@@ -8,17 +8,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clarity - Your biggest ecommerce app</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./dist/styles/style.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar _container">
             <div class="nav__logo">
-                <img src="" alt="">
+                <img src="./dist/img/Clarity.svg" alt="">
             </div>
             <ul class="nav__list">
                 <li class="nav__item"><a href="" class="nav__link">Home</a></li>
@@ -29,24 +31,43 @@
                 <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
             </ul>
             <div class="nav__icons">
-                <div class="searchbar">
-                    <i class="fa-regular fa-magnifying-glass"></i>
-                    <input type="text">
+                <div class="searchbar" >
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
                 </div>
                 <div class="icons">
-                    <a href=""><i class="fa-regular fa-user"></i></a>
-                    <a href=""><i class="fa-regular fa-heart"></i></a>
-                    <a href=""><i class="fa-regular fa-bag-shopping"></i></a>
+                    <a href=""><i class='bx bx-heart'></i></a>
+                    <a href=""><i class='bx bx-shopping-bag'></i></a>
+                    <a href=""><i class='bx bx-user'></i></a>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-
+        <div class="banner__section">
+            <div class="banner__container _container">
+                <div class="banner__left">
+                    <div class="icon__text">
+                        <i class='bx bxs-hot'></i>
+                        <span>Largest NFT Marketplace</span>
+                    </div>
+                    <div class="banner__header">
+                        <h1>Discover, collect, and sell extraordinary NFTs
+                        </h1>
+                    </div>
+                    <div class="banner__btn">
+                        <button>Explore <i class='bx bx-right-arrow-alt'></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
     </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="./dist/scripts/app.js"></script>
 </body>
 </html>
