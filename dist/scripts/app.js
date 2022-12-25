@@ -1,9 +1,29 @@
+window.addEventListener('scroll',function(){
+  let windowPosition = window.scrollY >0;
+  let header = document.getElementById('header');
+  header.classList.toggle('header-active',windowPosition)
+});
+
+const categoryLink = document.querySelectorAll('.arrival__link');
+categoryLink.forEach(element => {
+  element.addEventListener('click', function(e){
+    categoryLink.forEach(remove => {
+      remove.classList.remove('active')
+      element.classList.add('active');
+      e.preventDefault();
+    })
+  })
+})
+
+
+
+
 $('.banner__carousel').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 2,
     autoplay: true,
-    centerPadding: '20px',
+    centerPadding: '0',
     centerMode: true,
     arrows: false,
     dots: true,
