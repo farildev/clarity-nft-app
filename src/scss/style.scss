@@ -482,4 +482,190 @@ main{
             }
         }
     }
+    .sold__section{
+        margin-top: 120px;
+        .sold__container{
+            .sold__title{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i{
+                    background-color: $purple-color;
+                    color: $light-color;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+                span{
+                    color: $purple-color;
+                    margin-left: 10px;
+                }
+            }
+            .sold__header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+            }
+            .sold__product{
+                margin-top: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                .sold__box{
+                    width: 32%;
+                    background-color: $light-color;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 20px;
+                    border: 2px solid #f6f6f6;
+                    border-radius: 5px;
+                    margin-top: 30px;
+                    .sold__img{
+                        width: 35%;
+                        height: 100%;
+                        transition: 3s ease-in-out;
+                        img{
+                            width: 100%;
+                            border-radius: 5px;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    .sold__about{
+                        height: 100%;
+                        width: 60%;
+                        margin-left: 10px;
+                        .sold__name{
+                            display: flex;
+                            align-items: center;
+                            a{
+                                font-size: 16px;
+                                color: $light-dark-color;
+                                font-weight: 400;
+                            }
+                            .arrival__badge{
+                                color: $blue-color;
+                                margin-left: 5px;
+                            }
+                        }
+                        .sold__price{
+                            margin-top: 10px;
+                            span{
+                                font-size: 20px;
+                                font-weight: 700;
+                                margin: 0 4px;
+                                
+                            }
+                        }
+                        .sold__btn{
+                            margin-top: 10px;
+                            button{
+                                background-color: transparent;
+                                border: 2px solid #f6f6f6;
+                                color: $dark-color;
+                                font-family: inherit;
+                                font-weight: 400;
+                                padding: 10px 15px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nft__section{
+        margin-top: 120px;
+        .nft__container{
+            .nft__header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+            }
+            .nft__content{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 60px;
+                .nft__box{
+                    width: 23%;
+                    padding: 30px 20px;
+                    border: 2px solid #f6f6f6;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    .nft__img{
+                        width: 60px;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .nft__name{
+                        margin-top: 10px;
+                        h1{
+                            font-size: 18px;
+                            font-weight: 500;
+                            font-family: inherit;
+                            color: $dark-color;
+                        }
+                    }
+                    .nft__title{
+                        margin-top: 20px;
+                        text-align: center;
+                        p{
+                            color: $light-dark-color;
+                            line-height: 24px;
+                            font-size: 16px;
+                            letter-spacing: 0.75px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .video__section{
+        margin-top: 200px;
+        .video__container{
+            display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            .video__title{
+                i{
+                    background-color: $purple-color;
+                    color: $light-color;
+                    padding: 0.5rem;
+                    border-radius: 50%;
+                }
+                span{
+                    color: $purple-color;
+                    margin-left: 10px;
+                }
+            }
+            .video__header{
+                margin-top: 10px;
+                h1{
+                    font-size: 36px;
+                    font-weight: 500;
+                }
+            }
+            .video__content{
+                margin-top: 30px;
+                img{
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
 }
