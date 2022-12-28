@@ -29,10 +29,10 @@ $('.banner__carousel').slick({
     dots: true,
     responsive: [
       {
-        breakpoint:1280,
+        breakpoint:1200,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
@@ -75,7 +75,9 @@ $('.banner__carousel').slick({
     slidesToScroll: 4,
     autoplay: true,
     centerPadding: '20px',
-    arrows: false,
+    arrows: true,
+    nextArrow: $('.arrow__right'),
+    prevArrow: $('.arrow__left'),
     dots: false,
     responsive: [
       {
@@ -119,6 +121,8 @@ $('.banner__carousel').slick({
       },
     ]
   });
+
+  
 
   // $('.category__carousel').slick({
   //   infinite: true,

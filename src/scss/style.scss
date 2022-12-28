@@ -123,8 +123,9 @@ main{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             .banner__left{
-                max-width: 45%;
+                max-width: 40%;
                 .icon__text{
                     i{
                         background-color: $pink-color;
@@ -918,6 +919,20 @@ footer{
             }
         }
     }
+    main{
+        .banner__section{
+            .banner__container{
+                .banner__left{
+                    .banner__header{
+                        h1{
+                            font-size: 50px;
+                            line-height: 58px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width:992px){
     header{
@@ -941,6 +956,22 @@ footer{
                             display: block;
                         }
                     }
+                }
+            }
+        }
+    }
+    main{
+        margin-top: 50px;
+        .banner__section{
+
+            .banner__container{
+                height: auto;
+                .banner__left{
+                    max-width: 100%;
+                }
+                .banner__right{
+                    margin-top: 50px;
+                    max-width: 100%;
                 }
             }
         }
