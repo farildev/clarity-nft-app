@@ -20,8 +20,8 @@ categoryLink.forEach(element => {
 
 $('.banner__carousel').slick({
     infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     autoplay: true,
     centerPadding: '0',
     centerMode: true,
