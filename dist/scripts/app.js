@@ -8,6 +8,12 @@ const arrivalBox = document.querySelectorAll('.arrival__box');
 const categoryLink = document.querySelectorAll('.arrival__link');
 categoryLink.forEach(element => {
   element.addEventListener('click', function(e){
+    arrivalBox.forEach(arrivalEl => {
+      arrivalEl.classList.add('show')
+      arrivalBox.forEach(removeEl => {
+        removeEl.classList.remove('show')
+      })
+    })
     categoryLink.forEach(remove => {
       remove.classList.remove('active')
       element.classList.add('active');
@@ -15,9 +21,6 @@ categoryLink.forEach(element => {
     })
   })
 })
-
-
-
 
 $('.banner__carousel').slick({
     infinite: true,

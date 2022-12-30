@@ -384,6 +384,7 @@ main{
                     }
                     .seller__bottom{
                         padding: 35px 30px 30px;
+                        background-color: $light-color;
                         .seller__name{
                             display: flex;
                             justify-content: flex-start;
@@ -477,6 +478,9 @@ main{
                             width: 100%;
                             border-radius: 5px;
                         }
+                    }
+                    &.show:nth-child(odd){
+                        display: block;
                     }
                     .arrival__about{
                         .arrival__name{
