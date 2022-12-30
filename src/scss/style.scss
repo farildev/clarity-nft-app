@@ -36,6 +36,7 @@ html{
     scroll-behavior: smooth;
     transition: 300ms all ease-in-out;
 }
+
 header{
     background-color: $light-color;
     z-index: 99;
@@ -178,6 +179,7 @@ main{
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
                     .carousel__box{
                         margin: 0 5px;
                         width: 252px;
@@ -360,11 +362,15 @@ main{
                     }
                     .seller__top{
                         width: 100%;
-                        img{
-                            width: 100%;
-                            object-fit: cover;
-                            object-position: center;
-                            transition: 500ms all ease-in-out;
+                        .seller__img{
+                            max-height: 40vh;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                                transition: 500ms all ease-in-out;
+                            }
                         }
                         .seller__price{
                             position: absolute;

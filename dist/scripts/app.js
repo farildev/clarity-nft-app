@@ -4,6 +4,7 @@ window.addEventListener('scroll',function(){
   header.classList.toggle('header-active',windowPosition)
 });
 
+const arrivalBox = document.querySelectorAll('.arrival__box');
 const categoryLink = document.querySelectorAll('.arrival__link');
 categoryLink.forEach(element => {
   element.addEventListener('click', function(e){
