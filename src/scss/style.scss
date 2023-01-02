@@ -247,9 +247,40 @@ main{
             }
             .category__header{
                 margin-top: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                }
+                .category__arrow{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .category__left{
+                        background-color: #f6f6f6;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                        margin-right: 10px;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
+                    .category__right{
+                        background-color: #f6f6f6;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 1rem;
+                        i{
+                            font-size: 22px;
+                        }
+                    }
                 }
             }
             .category__carousel{
@@ -265,6 +296,7 @@ main{
                     flex-direction: column;
                     background-color: $light-color;
                     padding: 1rem;
+                    margin: 0 20px;
                     border: 2px solid #f6f6f6;
                     border-radius: 5px;
                     .category__img{
