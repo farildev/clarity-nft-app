@@ -27,7 +27,7 @@ $('.banner__carousel').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    centerPadding: '0',
+    centerPadding: '20',
     centerMode: true,
     arrows: false,
     dots: true,
@@ -42,15 +42,16 @@ $('.banner__carousel').slick({
       {
         breakpoint:992,
         settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToScroll: 3,
+          slidesToShow: 3,
+          dots: false,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToScroll: 3,
+          slidesToShow: 3,
         },
       },  
       {
@@ -94,15 +95,15 @@ $('.banner__carousel').slick({
       {
         breakpoint:992,
         settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToScroll: 3,
+          slidesToShow: 2,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToScroll: 2,
+          slidesToShow: 2,
         },
       },  
       {
@@ -134,8 +135,8 @@ $('.banner__carousel').slick({
     centerMode: true,
     arrows: false,
     dots: false,
-    nextArrow: $('.category__right'),
-    prevArrow: $('.category__left'),
+    nextArrow: $('#left'),
+    prevArrow: $('#right'),
     responsive: [
       {
         breakpoint:1200,
@@ -148,14 +149,14 @@ $('.banner__carousel').slick({
         breakpoint:992,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToShow: 3,
         },
       },  
       {
