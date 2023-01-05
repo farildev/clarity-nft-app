@@ -215,7 +215,7 @@ main{
                     .carousel__box{
                         height: 600px;
                         margin: 0 5px;
-                        width: 252px;
+                        width: 30%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -641,6 +641,7 @@ main{
                         height: 100%;
                         transition: 3s ease-in-out;
                         img{
+                            height: 100%;
                             width: 100%;
                             border-radius: 5px;
                             object-fit: cover;
@@ -707,6 +708,7 @@ main{
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 60px;
+                flex-wrap: wrap;
                 .nft__box{
                     width: 23%;
                     padding: 30px 20px;
@@ -1062,6 +1064,39 @@ footer{
                 .banner__right{
                     margin-top: 50px;
                     max-width: 100%;
+                }
+            }
+        }
+        .arrival__section{
+            .arrival__container{
+                .arrival__product{
+                    .arrival__header{
+                        h1{
+                            font-size: 28px;
+                        }
+                    }
+                    .arrival__box{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+        .sold__section{
+            .sold__container{
+                .sold__product{
+                    .sold__box{
+                        width: 48%;
+                    }
+                }
+            }
+        }
+        .nft__section{
+            .nft__container{
+                .nft__content{
+                    .nft__box{
+                        width: 48%;
+                        margin: 20px 0;
+                    }
                 }
             }
         }

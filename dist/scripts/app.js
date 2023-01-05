@@ -89,7 +89,7 @@ $('.banner__carousel').slick({
         breakpoint:1280,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 2,
+          slidesToShow: 3,
         },
       },
       {
