@@ -78,7 +78,7 @@ header{
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                border: 2px solid #f1f1f1;
+                border: 1px solid $white-color;
                 i{
                     color: $light-dark-color;
                     margin-right: 10px;
@@ -117,11 +117,11 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-image: url('/dist/img/bg-image-4.jpeg');
-        // background-repeat: none;
-        // background-position: center;
+        background-image: url('/dist/img/greenbg.webp');
+        background-repeat: none;
+        background-position: center;
         .banner__container{
-            height: 87vh;
+            height: 100vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -131,7 +131,7 @@ main{
                 .icon__text{
                     i{
                         background-color: $green-color;
-                        color: $white-color;
+                        color: $dark-color;
                         padding: 0.5rem;
                         border-radius: 50%;
                     }
@@ -236,15 +236,22 @@ main{
                             justify-content: center;
                             align-items: center;
                             margin: 0 10px;
-                            height: 100%;
+                            height: 400px;
+                            background: transparent;
                             &.slick-current,
                             &.slick-center{
-                                height: 100%;
+                                z-index: 1;
+                                height: 500px;
                                 transform: scale(1.4);
                                 transition: 300ms all ease-in-out;
+                                border-radius: 5px;
+                                border-top-left-radius: 5px;
+                                border-top-right-radius: 5px;
+
                             }
                         }
                         .carousel__img{
+                            width: 100%;
                             img{
                                 height: 100%;
                                 width: 100%;
@@ -253,29 +260,34 @@ main{
                             }
                         }
                         .carousel__about{
-                            padding: 1rem 2rem;
+                            padding: 2rem 2rem;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
+                            background-color: $dark-color;
+                            border-bottom-left-radius: 5px;
+                            border-bottom-right-radius: 5px;
+                            width: 100%;
                             a{
-                                color: $light-dark-color;
+                                color: $white-color;
                             }
                             .price{
                                 margin-top: 10px;
                                 color: $white-color;
-                                font-size: 20px;
+                                font-size: 18px;
                             }
                             button{
                                 background-color: $green-color;
                                 border: none;
                                 outline: none;
                                 color: $dark-color;
-                                padding: 0.8rem 1.5rem;
+                                padding: 0.5rem 1rem;
                                 border-radius: 5px;
-                                margin-top: 15px;
+                                margin-top: 10px;
                                 font-family: inherit;
                                 font-weight: 500;
+                                font-size: 10px;
                             }
                         }
                     }
@@ -289,7 +301,7 @@ main{
             .category__title{
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
@@ -322,7 +334,7 @@ main{
                         margin-right: 10px;
                         i{
                             font-size: 22px;
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                     .category__right{
@@ -334,7 +346,7 @@ main{
                         padding: 1rem;
                         i{
                             font-size: 22px;
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                 }
@@ -350,10 +362,10 @@ main{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    background-color: $white-color;
+                    background-color: $dark-color;
                     padding: 1rem;
                     margin: 0 20px;
-                    border: 2px solid #f6f6f6;
+                    border: 1px solid $green-color;
                     border-radius: 5px;
                     .category__img{
                         width: 134px;
@@ -370,6 +382,7 @@ main{
                         margin-top: 15px;
                         h3{
                             font-weight: 400;
+                            color: $white-color;
                         }
                     }
                 }
@@ -382,7 +395,7 @@ main{
             .seller__title{
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
@@ -416,7 +429,7 @@ main{
                         margin-right: 10px;
                         i{
                             font-size: 22px;
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                     .arrow__right{
@@ -428,7 +441,7 @@ main{
                         padding: 1rem;
                         i{
                             font-size: 22px;
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                 }
@@ -441,22 +454,12 @@ main{
                 .seller__box{
                     position: relative;
                     min-width: 285px;
-                    background-color: $white-color;
-                    border: 2px solid #f6f6f6;
+                    background-color: $dark-color;
+                    border: 1px solid $green-color;
                     border-radius: 5px;
                     margin: 0 15px;
                     overflow: hidden;
                     overflow-y: hidden;
-                    &:hover{
-                        .seller__top{
-                            .seller__img{
-                                img{
-                                    padding: 1rem;
-                                    border-radius: 5px;
-                                }
-                            }
-                        }
-                    }
                     .seller__top{
                         width: 100%;
                         height: 100%;
@@ -474,7 +477,7 @@ main{
                             position: absolute;
                             bottom: 33%;
                             left: 73%;
-                            background-color: #f6f6f6;
+                            background-color: $green-color;
                             border-radius: 5px;
                             filter: blur(70%);
                             padding: 0.8rem 1rem;
@@ -482,14 +485,14 @@ main{
                     }
                     .seller__bottom{
                         padding: 35px 30px 30px;
-                        background-color: $white-color;
+                        background-color: $dark-color;
                         .seller__name{
                             display: flex;
                             justify-content: flex-start;
                             align-items: center;
                             h3{
                                 font-size: 16px;
-                                color: $light-dark-color;
+                                color: $white-color;
                                 font-weight: 400;
                             }
                             .seller__badge{
@@ -498,13 +501,13 @@ main{
                             }
                         }
                         .seller__btn{
-                            margin-top: 10px;
+                            margin-top: 15px;
                             button{
-                                background-color: $white-color;
-                                border: 2px solid #f6f6f6;
+                                background-color: $green-color;
+                                border: none;
                                 outline: none;
                                 font-size: 14px;
-                                font-weight: 700;
+                                font-weight: 500;
                                 font-family: inherit;
                                 padding: 10px 18px;
                                 border-radius: 5px;
@@ -523,7 +526,7 @@ main{
             .arrival__title{
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
@@ -557,7 +560,7 @@ main{
                         }
                         &.active{
                             background-color: $green-color;
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                 }
@@ -620,7 +623,7 @@ main{
                 align-items: center;
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
@@ -648,12 +651,12 @@ main{
                 flex-wrap: wrap;
                 .sold__box{
                     width: 32%;
-                    background-color: $white-color;
+                    background-color: $dark-color;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
                     padding: 20px;
-                    border: 2px solid #f6f6f6;
+                    border: 1px solid #f6f6f6;
                     border-radius: 5px;
                     margin-top: 30px;
                     .sold__img{
@@ -671,13 +674,13 @@ main{
                     .sold__about{
                         height: 100%;
                         width: 60%;
-                        margin-left: 10px;
+                        margin-left: 15px;
                         .sold__name{
                             display: flex;
                             align-items: center;
                             a{
                                 font-size: 16px;
-                                color: $light-dark-color;
+                                color: $white-color;
                                 font-weight: 400;
                             }
                             .arrival__badge{
@@ -686,19 +689,21 @@ main{
                             }
                         }
                         .sold__price{
-                            margin-top: 10px;
+                            margin-top: 20px;
                             span{
                                 font-size: 20px;
                                 font-weight: 700;
                                 margin: 0 4px;
+                                color: $white-color;
                                 
                             }
                         }
                         .sold__btn{
-                            margin-top: 10px;
+                            margin-top: 20px;
                             button{
-                                background-color: transparent;
-                                border: 2px solid #f6f6f6;
+                                background-color: $green-color;
+                                border: none;
+                                outline: none;
                                 color: $dark-color;
                                 font-family: inherit;
                                 font-weight: 400;
@@ -778,7 +783,7 @@ main{
             .video__title{
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
@@ -840,7 +845,7 @@ main{
                 align-items: center;
                 i{
                     background-color: $green-color;
-                    color: $white-color;
+                    color: $dark-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
