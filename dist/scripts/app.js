@@ -1,5 +1,5 @@
 window.addEventListener('scroll',function(){
-  let windowPosition = window.scrollY >0;
+  let windowPosition = window.scrollY >100;
   let header = document.getElementById('header');
   header.classList.toggle('header-active',windowPosition)
 });

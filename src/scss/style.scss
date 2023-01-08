@@ -35,10 +35,10 @@ html{
     -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.16);
     scroll-behavior: smooth;
     transition: 300ms all ease-in-out;
+    background-color: $dark-color;
 }
 
 header{
-    background-color: $dark-color;
     z-index: 99;
     width: 100%;
     position: sticky;
@@ -59,11 +59,27 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            .dropdown{
+                display: none;
+                .dropdown__item{
+                    .dropdown__link{
+                        color: $white-color;
+                    }
+                }
+            }
             .nav__item{
                 margin: 0 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .nav__link{
                     color: $white-color;
                     font-weight: 400;
+                    
+                }
+                i{
+                    color: $white-color;
+                    margin-left: 5px;
                 }
             }
         }
@@ -288,6 +304,7 @@ main{
                                 font-family: inherit;
                                 font-weight: 500;
                                 font-size: 10px;
+                                cursor: pointer;
                             }
                         }
                     }
@@ -556,6 +573,7 @@ main{
                         padding: 10px 15px;
                         &:hover{
                             background-color: #f6f6f6;
+                            color: $green-color;
                             transition: 300ms all ease-in-out;
                         }
                         &.active{
