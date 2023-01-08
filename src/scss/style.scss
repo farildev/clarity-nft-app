@@ -1,10 +1,9 @@
-$blue-color :#3577f0;
+$green-color :#38E54D;
 $pink-color : #ff497c;
 $purple-color : #8c71db;
 $light-dark-color: #777777;
-$light-color : #ffffff;
 $dark-color: #1c1c1c;
-$black-color: #000000;
+$white-color: #ffffff;
 
 
 *{
@@ -28,6 +27,7 @@ body,
 html{
     height: 100%;
     font-family: 'DM Sans',sans-serif;
+    background-color: #000000;
 }
 .header-active{
     box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.16);
@@ -38,7 +38,7 @@ html{
 }
 
 header{
-    background-color: $light-color;
+    background-color: $dark-color;
     z-index: 99;
     width: 100%;
     position: sticky;
@@ -62,7 +62,7 @@ header{
             .nav__item{
                 margin: 0 25px;
                 .nav__link{
-                    color: $dark-color;
+                    color: $white-color;
                     font-weight: 400;
                 }
             }
@@ -88,6 +88,7 @@ header{
                     border: none;
                     outline: none;
                     font-family: inherit;
+                    color: $white-color;
                 }
             }
             .icons{
@@ -96,7 +97,7 @@ header{
                 align-items: center;
                 a{
                     margin: 0 10px;
-                    color: $light-dark-color;
+                    color: $white-color;
                     i{
                         font-size: 22px;
                     }
@@ -116,9 +117,9 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-image: url('/dist/img/bg-image-4.jpeg');
-        background-repeat: none;
-        background-position: center;
+        // background-image: url('/dist/img/bg-image-4.jpeg');
+        // background-repeat: none;
+        // background-position: center;
         .banner__container{
             height: 87vh;
             display: flex;
@@ -129,13 +130,13 @@ main{
                 max-width: 40%;
                 .icon__text{
                     i{
-                        background-color: $pink-color;
-                        color: $light-color;
+                        background-color: $green-color;
+                        color: $white-color;
                         padding: 0.5rem;
                         border-radius: 50%;
                     }
                     span{
-                        color: $pink-color;
+                        color: $green-color;
                         margin-left: 10px;
                     }
                 }
@@ -145,6 +146,7 @@ main{
                         font-size: 60px;
                         line-height: 70px;
                         letter-spacing: 0.5px;
+                        color: $white-color;
                     }
                 }
                 .banner__btn{
@@ -153,7 +155,7 @@ main{
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        background-color: $light-color;
+                        background-color: $green-color;
                         border: none;
                         outline: none;
                         color: $dark-color;
@@ -180,6 +182,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     height: auto;
+                    background: transparent;
                     .slick-dots {
                         display: flex;
                         justify-content: center;
@@ -192,6 +195,7 @@ main{
                             }
                         
                             button {
+                                margin-top: 50px;
                                 display: block;
                                 width: 5px;
                                 height: 5px;
@@ -204,7 +208,7 @@ main{
                         
                             li.slick-active button {
                                 background-color: transparent;
-                                border: 2px solid $blue-color;
+                                border: 2px solid $green-color;
                                 width: 10px;
                                 height: 10px;
                                 transition: 300ms all ease-in-out;
@@ -214,24 +218,28 @@ main{
                     }
 
                     .carousel__box{
-                        height: 600px;
                         margin: 0 5px;
                         width: 30%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        background-color: $light-color;
+                        background-color: transparent;
                         border-radius: 5px;
                         box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
                         -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
                         -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.10);
                         transition: 300ms all ease-in-out;
-                        background-color: $light-color;
+                        background-color: $white-color;
                         &.slick-slide{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
                             margin: 0 10px;
+                            height: 100%;
                             &.slick-current,
                             &.slick-center{
+                                height: 100%;
                                 transform: scale(1.4);
                                 transition: 300ms all ease-in-out;
                             }
@@ -255,14 +263,14 @@ main{
                             }
                             .price{
                                 margin-top: 10px;
-                                color: $dark-color;
+                                color: $white-color;
                                 font-size: 20px;
                             }
                             button{
-                                background-color: $pink-color;
+                                background-color: $green-color;
                                 border: none;
                                 outline: none;
-                                color: $light-color;
+                                color: $dark-color;
                                 padding: 0.8rem 1.5rem;
                                 border-radius: 5px;
                                 margin-top: 15px;
@@ -280,13 +288,13 @@ main{
         .category__container{
             .category__title{
                 i{
-                    background-color: $pink-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 .category{
-                    color: $pink-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -298,13 +306,14 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
                 .category__arrow{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     .category__left{
-                        background-color: #f6f6f6;
+                        background-color: $green-color;
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
@@ -313,10 +322,11 @@ main{
                         margin-right: 10px;
                         i{
                             font-size: 22px;
+                            color: $white-color;
                         }
                     }
                     .category__right{
-                        background-color: #f6f6f6;
+                        background-color: $green-color;
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
@@ -324,6 +334,7 @@ main{
                         padding: 1rem;
                         i{
                             font-size: 22px;
+                            color: $white-color;
                         }
                     }
                 }
@@ -339,7 +350,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    background-color: $light-color;
+                    background-color: $white-color;
                     padding: 1rem;
                     margin: 0 20px;
                     border: 2px solid #f6f6f6;
@@ -370,13 +381,13 @@ main{
         .seller__container{
             .seller__title{
                 i{
-                    background-color: $purple-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 span{
-                    color: $purple-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -389,13 +400,14 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
                 .seller__arrow{
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     .arrow__left{
-                        background-color: #f6f6f6;
+                        background-color: $green-color;
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
@@ -404,10 +416,11 @@ main{
                         margin-right: 10px;
                         i{
                             font-size: 22px;
+                            color: $white-color;
                         }
                     }
                     .arrow__right{
-                        background-color: #f6f6f6;
+                        background-color: $green-color;
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
@@ -415,6 +428,7 @@ main{
                         padding: 1rem;
                         i{
                             font-size: 22px;
+                            color: $white-color;
                         }
                     }
                 }
@@ -427,8 +441,9 @@ main{
                 .seller__box{
                     position: relative;
                     min-width: 285px;
-                    background-color: $light-color;
+                    background-color: $white-color;
                     border: 2px solid #f6f6f6;
+                    border-radius: 5px;
                     margin: 0 15px;
                     overflow: hidden;
                     overflow-y: hidden;
@@ -437,6 +452,7 @@ main{
                             .seller__img{
                                 img{
                                     padding: 1rem;
+                                    border-radius: 5px;
                                 }
                             }
                         }
@@ -466,7 +482,7 @@ main{
                     }
                     .seller__bottom{
                         padding: 35px 30px 30px;
-                        background-color: $light-color;
+                        background-color: $white-color;
                         .seller__name{
                             display: flex;
                             justify-content: flex-start;
@@ -477,14 +493,14 @@ main{
                                 font-weight: 400;
                             }
                             .seller__badge{
-                                color: $blue-color;
+                                color: $green-color;
                                 margin-left: 5px;
                             }
                         }
                         .seller__btn{
                             margin-top: 10px;
                             button{
-                                background-color: $light-color;
+                                background-color: $white-color;
                                 border: 2px solid #f6f6f6;
                                 outline: none;
                                 font-size: 14px;
@@ -506,13 +522,13 @@ main{
         .arrival__container{
             .arrival__title{
                 i{
-                    background-color: $purple-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 span{
-                    color: $purple-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -524,11 +540,12 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
                 .arrival__category{
                     .arrival__link{
                         margin: 5px;
-                        color: $dark-color;
+                        color: $white-color;
                         font-size: 16px;
                         font-weight: 500;
                         border-radius: 5px;
@@ -539,8 +556,8 @@ main{
                             transition: 300ms all ease-in-out;
                         }
                         &.active{
-                            background-color: #3577f0;
-                            color: $light-color;
+                            background-color: $green-color;
+                            color: $white-color;
                         }
                     }
                 }
@@ -572,11 +589,11 @@ main{
                             margin-top: 20px;
                             a{
                                 font-size: 16px;
-                                color: $light-dark-color;
+                                color: $white-color;
                                 font-weight: 400;
                             }
                             .arrival__badge{
-                                color: $blue-color;
+                                color: $green-color;
                                 margin-left: 5px;
                             }
                         }
@@ -602,13 +619,13 @@ main{
                 justify-content: center;
                 align-items: center;
                 i{
-                    background-color: $purple-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 span{
-                    color: $purple-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -620,6 +637,7 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
             }
             .sold__product{
@@ -630,7 +648,7 @@ main{
                 flex-wrap: wrap;
                 .sold__box{
                     width: 32%;
-                    background-color: $light-color;
+                    background-color: $white-color;
                     display: flex;
                     justify-content: space-between;
                     align-items: flex-start;
@@ -663,7 +681,7 @@ main{
                                 font-weight: 400;
                             }
                             .arrival__badge{
-                                color: $blue-color;
+                                color: $green-color;
                                 margin-left: 5px;
                             }
                         }
@@ -703,6 +721,7 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
             }
             .nft__content{
@@ -714,9 +733,10 @@ main{
                 .nft__box{
                     width: 23%;
                     padding: 30px 20px;
-                    border: 2px solid #f6f6f6;
+                    border: 2px solid $green-color;
                     display: flex;
                     justify-content: center;
+                    border-radius: 5px;
                     align-items: center;
                     flex-direction: column;
                     .nft__img{
@@ -731,14 +751,14 @@ main{
                             font-size: 18px;
                             font-weight: 500;
                             font-family: inherit;
-                            color: $dark-color;
+                            color: $white-color;
                         }
                     }
                     .nft__title{
                         margin-top: 20px;
                         text-align: center;
                         p{
-                            color: $light-dark-color;
+                            color: $white-color;
                             line-height: 24px;
                             font-size: 16px;
                             letter-spacing: 0.75px;
@@ -757,13 +777,13 @@ main{
                 flex-direction: column;
             .video__title{
                 i{
-                    background-color: $purple-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 span{
-                    color: $purple-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -772,6 +792,7 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
             }
             .video__content{
@@ -788,7 +809,7 @@ main{
                 .player__popup{
                     z-index: 2;
                     position: absolute;
-                    background-color: $light-color;
+                    background-color: $white-color;
                     padding: 1.2rem;
                     border-radius: 50%;
                     transition: 300ms all ease-in-out;
@@ -804,7 +825,7 @@ main{
                     i{
                         font-size: 48px;
                         transition: 300ms all ease-in-out;
-                        color: $blue-color;
+                        color: $green-color;
                     }
                 }
             }
@@ -818,13 +839,13 @@ main{
                 justify-content: center;
                 align-items: center;
                 i{
-                    background-color: $purple-color;
-                    color: $light-color;
+                    background-color: $green-color;
+                    color: $white-color;
                     padding: 0.5rem;
                     border-radius: 50%;
                 }
                 span{
-                    color: $purple-color;
+                    color: $white-color;
                     margin-left: 10px;
                 }
             }
@@ -836,6 +857,7 @@ main{
                 h1{
                     font-size: 36px;
                     font-weight: 500;
+                    color: $white-color;
                 }
             }
             .blog__content{
@@ -851,7 +873,7 @@ main{
                     flex-direction: column;
                     width: 30%;
                     border-radius: 5px;
-                    border: 2px solid #f6f6f6;
+                    border: 2px solid $green-color;
                     .blog__img{
                         img{
                             width: 100%;
@@ -864,6 +886,7 @@ main{
                             font-size: 20px;
                             font-family: inherit;
                             font-weight: 500;
+                            color: $white-color;
                         }
                     }
                     .blog__link{
@@ -873,7 +896,7 @@ main{
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            color: $dark-color;
+                            color: $green-color;
                             font-weight: 500;
                             font-size: 16px;
                         }
