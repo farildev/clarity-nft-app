@@ -85,23 +85,27 @@ header{
                 }
             }
             .nav__item{
-                margin: 0 25px;
+                margin: 0 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 .nav__link{
                     color: $white-color;
                     font-weight: 400;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     &:hover{
                         .dropdown{
                             display: block;
                         }
                     }
+                    i{
+                        color: $white-color;
+                        margin-left: 5px;
+                    }
                 }
-                i{
-                    color: $white-color;
-                    margin-left: 5px;
-                }
+                
             }
         }
         .nav__icons{
