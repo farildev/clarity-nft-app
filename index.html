@@ -398,15 +398,29 @@
                 <div class="arrival__header">
                     <h1>New Arrival Products</h1>
                     <div class="arrival__category">
-                        <a href="" class="arrival__link active">All</a>
-                        <a href="" class="arrival__link">Art</a>
-                        <a href="" class="arrival__link">Music</a>
-                        <a href="" class="arrival__link">Photography</a>
-                        <a href="" class="arrival__link">Sports</a>
+                        <a href="" data-filter="All" class="arrival__link active">All</a>
+                        <a href="" data-filter="Art" class="arrival__link">Art</a>
+                        <a href="" data-filter="Music" class="arrival__link">Music</a>
+                        <a href="" data-filter="Photography" class="arrival__link">Photography</a>
+                        <a href="" data-filter="Sports" class="arrival__link">Sports</a>
                     </div>
                 </div>
                 <div class="arrival__product">
-                    <div class="arrival__box">
+                    <div data-category="All" class="arrival__box">
+                        <div class="arrival__top">
+                            <img src="./dist/img/product-15.png" alt="">
+                        </div>
+                        <div data-category="Art" class="arrival__about">
+                            <div class="arrival__name">
+                                <a href="">Anime #0001</a>
+                                <span class="arrival__badge"><i class='bx bxs-badge-check'></i></span>
+                            </div>
+                            <div class="arrival__price">
+                                <span class="token__price">$5000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-category="All" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -420,21 +434,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
-                        <div class="arrival__top">
-                            <img src="./dist/img/product-15.png" alt="">
-                        </div>
-                        <div class="arrival__about">
-                            <div class="arrival__name">
-                                <a href="">Anime #0001</a>
-                                <span class="arrival__badge"><i class='bx bxs-badge-check'></i></span>
-                            </div>
-                            <div class="arrival__price">
-                                <span class="token__price">$5000</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="arrival__box">
+                    <div data-category="All" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-5.png" alt="">
                         </div>
@@ -448,7 +448,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Sport" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -462,7 +462,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Sport" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -476,7 +476,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Music" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -490,7 +490,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Music" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -504,7 +504,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Photography" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -518,7 +518,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Photography" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -532,7 +532,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div data-category="Music" class="arrival__box">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -546,7 +546,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div class="arrival__box" data-category="All">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
@@ -560,7 +560,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrival__box">
+                    <div class="arrival__box" data-category="Music">
                         <div class="arrival__top">
                             <img src="./dist/img/product-15.png" alt="">
                         </div>
