@@ -324,7 +324,7 @@ main{
                                 outline: none;
                                 color: $dark-color;
                                 padding: 0.5rem 1rem;
-                                border-radius: 5px;
+                                border-radius: 3px;
                                 margin-top: 10px;
                                 font-family: inherit;
                                 font-weight: 500;
@@ -1138,6 +1138,31 @@ footer{
                 .banner__right{
                     margin-top: 50px;
                     max-width: 100%;
+                    .banner__carousel{
+                        .carousel__box{
+                            &.slick__slide{
+                                height: 300px;
+                                &.slick-current,
+                                &.slick-center{
+                                    height: 200px;
+                                    transform: scale(1.2);
+                                }
+                            }
+                            .carousel__img{
+                                img{
+
+                                }
+                            }
+                            .carousel__about{
+                                a{
+                                    font-size: 12px;
+                                }
+                                .price{
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
