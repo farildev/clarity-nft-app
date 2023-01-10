@@ -1170,12 +1170,19 @@ footer{
         }
         .arrival__section{
             .arrival__container{
-                .arrival__product{
-                    .arrival__header{
-                        h1{
-                            font-size: 28px;
-                        }
+                .arrival__header{
+                    flex-wrap: wrap;
+                    h1{
+                        font-size: 28px;
+                        width: 100%;
                     }
+                    .arrival__category{
+                        width: 100%;
+                        margin-top: 40px;
+                    }
+                }
+                .arrival__product{
+                    
                     .arrival__box{
                         width: 48%; 
                     }
@@ -1197,6 +1204,28 @@ footer{
                     .nft__box{
                         width: 48%;
                         margin: 20px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    main{
+        .sold__section{
+            .sold__container{
+                .sold__product{
+                    .sold__box{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .nft__section{
+            .nft__container{
+                .nft__content{
+                    .nft__box{
+                        width: 100%;
                     }
                 }
             }
