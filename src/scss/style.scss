@@ -59,47 +59,49 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            .dropdown{
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 4%;
-                margin-top: 10px;
-                background-color: $green-color;
-                width: 100%;
-                padding: 1rem;
-                .dropdown__item{
-                    .dropdown__link{
-                        color: $dark-color;
-                        font-size: 16px;
-                        font-family: inherit;
-                        font-weight: 600;
-                        width: 100%;
-                        display: block;
-                        padding: 5px;
-                        &:hover{
-                            background-color: #a5ffb0;
-                        }
-                    }
-                }
-            }
             .nav__item{
                 margin: 0 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
+                outline: none;
+                padding: 7px 0;
+                &:hover{
+                    .dropdown{
+                        display: block;
+                    }
+                }
+                .dropdown{
+                    position: absolute;
+                    display: none;
+                    top: 35px;
+                    left: 0;
+                    width: 250px;
+                    background-color: $green-color;
+                    padding: 1rem;
+                    li{
+                        margin: 10px 0;
+                        a{
+                            font-family: inherit;
+                            font-weight: 500;
+                            color: $dark-color;
+                            display: block;
+                            transition: 300ms all ease-in-out;
+                            &:hover{
+                                transition: 300ms all ease-in-out;
+                                background-color: #9cfda7;
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
                 .nav__link{
                     color: $white-color;
                     font-weight: 400;
                     display: flex;
                     justify-content: center;
-                    align-items: center;
-                    &:hover{
-                        .dropdown{
-                            display: block;
-                        }
-                    }
+                    align-items: center;    
                     i{
                         color: $white-color;
                         margin-left: 5px;
@@ -1137,7 +1139,7 @@ footer{
                 }
                 .banner__right{
                     margin-top: 50px;
-                    max-width: 100%;
+                    max-width: 70%;
                     .banner__carousel{
                         .carousel__box{
                             &.slick__slide{
