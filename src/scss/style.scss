@@ -59,11 +59,28 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
             .dropdown{
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 4%;
+                margin-top: 10px;
+                background-color: $green-color;
+                width: 100%;
+                padding: 1rem;
                 .dropdown__item{
                     .dropdown__link{
-                        color: $white-color;
+                        color: $dark-color;
+                        font-size: 16px;
+                        font-family: inherit;
+                        font-weight: 600;
+                        width: 100%;
+                        display: block;
+                        padding: 5px;
+                        &:hover{
+                            background-color: #a5ffb0;
+                        }
                     }
                 }
             }
@@ -75,7 +92,11 @@ header{
                 .nav__link{
                     color: $white-color;
                     font-weight: 400;
-                    
+                    &:hover{
+                        .dropdown{
+                            display: block;
+                        }
+                    }
                 }
                 i{
                     color: $white-color;
@@ -137,7 +158,7 @@ main{
         background-repeat: none;
         background-position: center;
         .banner__container{
-            height: 100vh;
+            height: 90vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -211,7 +232,7 @@ main{
                             }
                         
                             button {
-                                margin-top: 50px;
+                                margin-top: 30px;
                                 display: block;
                                 width: 5px;
                                 height: 5px;
