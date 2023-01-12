@@ -496,7 +496,7 @@ main{
                 align-items: center;
                 .seller__box{
                     position: relative;
-                    min-width: 285px;
+                    width: 32%;
                     background-color: $dark-color;
                     border: 1px solid $green-color;
                     border-radius: 5px;
@@ -920,9 +920,10 @@ main{
                     justify-content: flex-start;
                     align-items: flex-start;
                     flex-direction: column;
-                    width: 30%;
+                    width: 32%;
                     border-radius: 5px;
                     border: 2px solid $green-color;
+                    margin: 15px;
                     .blog__img{
                         img{
                             width: 100%;
@@ -1211,7 +1212,17 @@ footer{
     }
 }
 @media(max-width:768px){
+    ._container{
+        padding: 0 30px;
+    }
     main{
+        .banner__section{
+            .banner__container{
+                .banner__right{
+                    max-width: 100%;
+                }
+            }
+        }
         .sold__section{
             .sold__container{
                 .sold__product{
@@ -1226,6 +1237,16 @@ footer{
                 .nft__content{
                     .nft__box{
                         width: 100%;
+                    }
+                }
+            }
+        }
+        .blog__section{
+            .blog__container{
+                .blog__content{
+                    flex-wrap: wrap;
+                    .blog__box{
+                        width: 45%;
                     }
                 }
             }
