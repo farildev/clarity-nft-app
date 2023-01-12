@@ -211,6 +211,11 @@ main{
                         font-family: inherit;
                         font-weight: 500;
                         cursor: pointer;
+                        transition: 300ms all ease-in-out;
+                        &:hover{
+                            padding: 1.2rem 2.2rem;
+                            transition: 300ms all ease-in-out;
+                        }
                         i{
                             font-size: 24px;
                             margin-left: 5px;
@@ -520,7 +525,7 @@ main{
                             position: absolute;
                             bottom: 33%;
                             left: 73%;
-                            background-color: $green-color;
+                            background-color: $white-color;
                             border-radius: 5px;
                             filter: blur(70%);
                             padding: 0.8rem 1rem;
@@ -1252,6 +1257,9 @@ footer{
             .banner__container{
                 .banner__right{
                     max-width: 100%;
+                    .banner__carousel{
+                        padding-bottom: 30px;
+                    }
                 }
             }
         }

@@ -52,6 +52,7 @@ $('.banner__carousel').slick({
         settings: {
           slidesToScroll: 3,
           slidesToShow: 3,
+          dots: false,
         },
       },  
       {
@@ -105,7 +106,8 @@ $('.banner__carousel').slick({
           slidesToScroll: 2,
           slidesToShow: 2,
         },
-      },  
+      }, 
+       
       {
         breakpoint:480,
         settings: {
@@ -159,6 +161,13 @@ $('.banner__carousel').slick({
           slidesToShow: 3,
         },
       },  
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToScroll: 2,
+          slidesToShow: 2,
+        },
+      }, 
       {
         breakpoint:480,
         settings: {
