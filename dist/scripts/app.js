@@ -9,10 +9,11 @@ const categoryLink = document.querySelectorAll('.arrival__link');
 categoryLink.forEach(element => {
   element.addEventListener('click', function(e){
     arrivalBox.forEach(arrivalEl => {
-      arrivalEl.classList.add('show')
       arrivalBox.forEach(removeEl => {
         removeEl.classList.remove('show')
-      })
+      });
+      this.classList.add('show');
+      const dataFilter = this.getAttribute('data-filter');
     })
     categoryLink.forEach(remove => {
       remove.classList.remove('active')
