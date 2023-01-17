@@ -75,11 +75,11 @@ header{
                 .dropdown{
                     position: absolute;
                     display: none;
-                    top: 35px;
+                    top: 55px;
                     left: 0;
                     width: 250px;
                     background-color: $green-color;
-                    padding: 1rem 1.5rem;
+                    padding: 1rem;
                     li{
                         margin: 20px 0;
                         a{
@@ -91,7 +91,7 @@ header{
                             &:hover{
                                 transition: 300ms all ease-in-out;
                                 background-color: #9cfda7;
-                                padding: 5px;
+                                padding: 10px;
                             }
                         }
                     }

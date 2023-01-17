@@ -6,20 +6,16 @@ window.addEventListener('scroll',function(){
 
 const arrivalBox = document.querySelectorAll('.arrival__box');
 const categoryLink = document.querySelectorAll('.arrival__link');
-categoryLink.forEach(element => {
-  element.addEventListener('click', function(e){
-    arrivalBox.forEach(arrivalEl => {
-      arrivalBox.forEach(removeEl => {
-        removeEl.classList.remove('show')
-      });
-      this.classList.add('show');
-      const dataFilter = this.getAttribute('data-filter');
+categoryLink.forEach(categoryEl => {
+  categoryEl.addEventListener('click', (e) => {
+    e.preventDefault();
+    categoryEl.classList.add('active');
+    categoryEl.forEach(removeEl => {
+      removeEl.addEventListener('click', ()=>{
+        categoryEl.classList.remove('active');
+      })
     })
-    categoryLink.forEach(remove => {
-      remove.classList.remove('active')
-      element.classList.add('active');
-      e.preventDefault();
-    })
+
   })
 })
 
