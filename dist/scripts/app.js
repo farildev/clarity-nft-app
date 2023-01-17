@@ -10,12 +10,7 @@ categoryLink.forEach(categoryEl => {
   categoryEl.addEventListener('click', (e) => {
     e.preventDefault();
     categoryEl.classList.add('active');
-    categoryEl.forEach(removeEl => {
-      removeEl.addEventListener('click', ()=>{
-        categoryEl.classList.remove('active');
-      })
-    })
-
+    console.log(categoryEl);
   })
 })
 
