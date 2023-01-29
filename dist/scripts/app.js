@@ -14,6 +14,22 @@ categoryLink.forEach(categoryEl => {
   })
 })
 
+const sidemenu = document.querySelector('.sidemenu__section');
+const hamburgerIcon = document.querySelector('.bx-menu');
+const closeIcon = document.querySelector('.close__icon');
+
+hamburgerIcon.addEventListener('click', function(e){
+  sidemenu.classList.add('menu-active');
+  e.preventDefault();
+});
+closeIcon.addEventListener('click', function(e){
+  sidemenu.classList.remove('menu-active');
+  e.preventDefault();
+
+})
+
+
+
 $('.banner__carousel').slick({
     infinite: true,
     slidesToShow: 3,

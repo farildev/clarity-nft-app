@@ -38,7 +38,9 @@ html{
     transition: 300ms all ease-in-out;
     background-color: $dark-color;
 }
-
+.menu-active{
+    visibility: visible;
+}
 .sidemenu__section{
     position: fixed;
     right: 0;
@@ -46,6 +48,7 @@ html{
     background-color: $white-color;
     width: 40%;
     height: 100vh;
+    visibility: hidden;
     .sidemenu__container{
         padding: 2rem;
         .sidemenu__top{
