@@ -38,17 +38,21 @@ html{
     transition: 300ms all ease-in-out;
     background-color: $dark-color;
 }
-.menu-active{
-    visibility: visible;
-}
 .sidemenu__section{
     position: fixed;
     right: 0;
     z-index: 10;
-    background-color: $white-color;
+    background-color: $green-color;
     width: 40%;
     height: 100vh;
-    visibility: hidden;
+    visibility: visible;
+    transform: translateX(100%);
+    transition: 300ms all ease-in-out;
+    &.menu-active{
+        transform: translateX(0);
+        visibility: visible;
+        transition: 300ms all ease-in-out;
+    }
     .sidemenu__container{
         padding: 2rem;
         .sidemenu__top{
@@ -62,15 +66,19 @@ html{
                 }
             }
             .close__icon{
-                background-color: $green-color;
-                padding: 5px;
+                background-color: $dark-color;
                 border-radius: 50%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 cursor: pointer;
+                width: 40px;
+                height: 40px;
                 i{
+                    display: flex;
+                    align-items: center;
                     font-size: 28px;
+                    color: $white-color;
                 }
             }
         }

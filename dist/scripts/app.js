@@ -25,7 +25,6 @@ hamburgerIcon.addEventListener('click', function(e){
 closeIcon.addEventListener('click', function(e){
   sidemenu.classList.remove('menu-active');
   e.preventDefault();
-
 })
 
 
