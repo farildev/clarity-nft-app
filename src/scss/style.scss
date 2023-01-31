@@ -54,7 +54,7 @@ html{
         transition: 300ms all ease-in-out;
     }
     .sidemenu__container{
-        padding: 2rem;
+        padding: 2rem; 
         .sidemenu__top{
             display: flex;
             justify-content: space-between;
@@ -112,7 +112,7 @@ header{
                 align-items: center;
                 position: relative;
                 outline: none;
-                padding: 7px 0;
+                padding: 20px 0;
                 &:hover{
                     .dropdown{
                         display: block;
@@ -127,8 +127,9 @@ header{
                     background-color: $green-color;
                     padding: 1rem;
                     li{
-                        margin: 20px 0;
+                        margin: 15px 0;
                         a{
+                            padding: 10px;
                             font-family: inherit;
                             font-weight: 500;
                             color: $dark-color;
@@ -137,7 +138,6 @@ header{
                             &:hover{
                                 transition: 300ms all ease-in-out;
                                 background-color: #9cfda7;
-                                padding: 10px;
                             }
                         }
                     }
