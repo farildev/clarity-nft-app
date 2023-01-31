@@ -195,6 +195,12 @@ header{
                     }
                     &:nth-child(5){
                         display: none;
+                        transition: 300ms all ease-in-out;
+                        &:hover{
+                            background-color: #38E54D;
+                            transition: 300ms all ease-in-out;
+                            border-radius: 100%;
+                        }
                     }
                 }
             }
