@@ -1177,9 +1177,6 @@ footer{
     }
     header{
         .navbar{
-            .nav__logo{
-
-            }
             .nav__icons{
                 .searchbar{
                     display: none;
@@ -1215,9 +1212,6 @@ footer{
 @media(max-width:992px){
     header{
         .navbar{
-            .nav__logo{
-
-            }
             .nav__list{
                 display: none;
             }
@@ -1258,11 +1252,6 @@ footer{
                                 &.slick-center{
                                     height: 200px;
                                     transform: scale(1.2);
-                                }
-                            }
-                            .carousel__img{
-                                img{
-
                                 }
                             }
                             .carousel__about{
