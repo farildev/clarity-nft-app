@@ -720,6 +720,12 @@ main{
                 .arrival__box{
                     width: 22%;
                     margin: 25px 0;
+                    &.hide{
+                        display: none;
+                    }
+                    &.active{
+                        display: block;
+                    }
                     .arrival__top{
                         img{
                             width: 100%;

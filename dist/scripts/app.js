@@ -6,18 +6,26 @@ window.addEventListener('scroll',function(){
 
 const arrivalBox = document.querySelectorAll('.arrival__box');
 const categoryLink = document.querySelectorAll('.arrival__link');
-categoryLink.forEach(categoryEl => {
-  categoryEl.addEventListener('click', (e) => {
+for(let i = 0; i<categoryLink.length; i++){
+  categoryLink[i].addEventListener('click', function(e){
+    for(let n=0; n<categoryLink.length; n++){
+      categoryLink[n].classList.remove('active');
+    }
+    categoryLink[i].classList.add('active');
+
+    const dataFilter = this.getAttribute('data-filter');
+    for(k=0; k<arrivalBox.length; k++){
+      arrivalBox[k].classList.add('active');
+      arrivalBox[k].classList.remove('hide');
+        if(arrivalBox[k].getAttribute('data-category') == dataFilter || dataFilter == "All"){
+          arrivalBox[k].classList.remove('active');
+          arrivalBox[k].classList.add('hide');
+        }
+    }
     e.preventDefault();
-    categoryEl.classList.add('active');
-    categoryEl.forEach(removeEl =>{
-      removeEl.addEventListener('click', ()=>{
-        categoryEl.classList.remove('active');
-      })
-    })
-    console.log(categoryEl);
   })
-})
+   
+}
 
 const sidemenu = document.querySelector('.sidemenu__section');
 const hamburgerIcon = document.querySelector('.bx-menu');
