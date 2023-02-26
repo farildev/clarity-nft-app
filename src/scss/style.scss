@@ -52,6 +52,7 @@ html{
         transform: translateX(0);
         visibility: visible;
         transition: 300ms all ease-in-out;
+
     }
     .sidemenu__container{
         padding: 30px; 
@@ -84,7 +85,6 @@ html{
         }
         .sidemenu__content{
             margin-top: 20px;
-            overflow-y: auto;
                 .sidemenu__item{
                     margin-top: 15px;
                     a{
