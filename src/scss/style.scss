@@ -38,6 +38,135 @@ html{
     transition: 300ms all ease-in-out;
     background-color: $dark-color;
 }
+
+.shopping__sidebar{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background-color: $white-color;
+    height: 100%;
+    padding: 2rem;
+    width: 45%;
+    .shopping__container{
+        width: 100%;
+        .shopping__header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #777777;
+            padding: 0 0 20px 0;
+            h1{
+                font-size: 24px;
+            }
+            .close__btn{
+                background-color: $dark-color;
+                padding: 0.5rem;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                i{
+                    color: $white-color;
+                    font-size: 24px;
+                }
+            }
+        }
+        .shopping__content{
+            margin-top: 100px;
+            .shopping__box{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 60px;
+                &:first-child{
+                    margin-top: 10px;
+                }
+                .shopping__details{
+                    display: flex;
+                    justify-content: flex-start;
+                    .shopping__img{
+                        position: relative;
+                        width: 25%;
+                        .delete__item{
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            background-color: $dark-color;
+                            color: $white-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0.5rem;
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .shopping__about{
+                        margin-left: 30px;
+                        .shopping__rate{
+                            display: flex;
+                            align-items: center;
+                            .rate__icons{
+                                i{
+                                    font-size: 12px;
+                                    color: rgb(221, 221, 0);
+                                }
+                            }
+                            .rate__point{
+                                margin-left: 5px;
+                                font-size: 12px;
+                            }
+                        }
+                        .product__name{
+                            margin-top: 10px;
+                            span{
+                                font-weight: 700;
+                                font-size: 16px;
+                            }
+                        }
+                        .product__price{
+                            margin-top: 15px;
+                            span{
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+                .shopping__counter{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .counter{
+                        margin: 0 10px;
+                        background-color: $dark-color;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        i{
+                            color: $white-color;
+                        }
+                    }
+                    .counter__body{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .login__popup{
     position: fixed;
     z-index: 10;

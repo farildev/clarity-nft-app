@@ -231,3 +231,6 @@ userIcon.addEventListener('click', function(e){
   loginPopup.classList.toggle('login__popup--active');
   e.preventDefault();
 })
+
+const shopIcon = document.querySelector('.shop__icon');
+
