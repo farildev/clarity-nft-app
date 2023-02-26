@@ -83,35 +83,32 @@ html{
             }
         }
         .sidemenu__content{
-            .sidemenu__list{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                margin-top: 30px;
-                li{
+            margin-top: 20px;
+            overflow-y: auto;
+                .sidemenu__item{
+                    margin-top: 15px;
                     a{
                         display: flex;
+                        justify-content: flex-start;
                         align-items: center;
                         color: $dark-color;
-                        font-size: 20px;
-                        margin-top: 15px;
-                        i{
-                            margin-left: 5px;
-                        }
+                        font-size: 18px;
                     }
-                    .dropdown__item{
+                    .sidemenu__dropdown{
+                        margin-top: 10px;
                         display: none;
-                        &.sidemenu__dropdown--active{
+                        &.sidemenu--active{
                             display: block;
                         }
-                        margin: 10px 20px;
-                        .dropdown__link{
-                            font-size: 14px;
+                        .dropdown__item{
+                            margin: 5px 15px;
+                            .dropdown__link{
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
                         }
                     }
                 }
-            }
         }
     }
 }
