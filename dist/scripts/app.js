@@ -41,6 +41,18 @@ closeIcon.addEventListener('click', function(e){
 })
 
 
+const dropdownBox = document.querySelectorAll('.dropdown__box');
+const dropdownEl = document.querySelectorAll('.dropdown__item');
+
+for(let l = 0; l < dropdownBox.length; l++ ){
+  dropdownBox[i].addEventListener('click', function(e){
+    for(let m=0; m<dropdownBox.length; m++){
+      dropdown[m].classList.add('active');
+    }
+    e.preventDefault();
+  })
+}
+
 
 $('.banner__carousel').slick({
     infinite: true,
