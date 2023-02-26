@@ -212,14 +212,22 @@ const sideMenuLink = document.querySelectorAll('.sidemenu__link');
 const sideDropdown = document.querySelectorAll('.sidemenu__dropdown');
 for(let c=0; c < sideMenuLink.length; c++){
   sideMenuLink[c].addEventListener('click', function(e){
-    for(let a=0; a<sideDropdown.length; a++){
-      sideDropdown[a].classList.add('sidemenu--active');
-    }
-    for( let b=0 ; b<sideMenuLink.length; b++){
-      sideMenuLink[b].classList.remove('sidemenu--active');
+    for(let d=0; d<sideMenuLink.length; d++){
+      sideMenuLink[d].classList.remove('sidemenu--active');
+      for(let a = 0; a<sideDropdown.length; a++){
+        sideDropdown[a].classList.add('sidemenu--active');
+      }
     }
     sideMenuLink[c].classList.add('sidemenu--active');
     e.preventDefault();
   });
 };
 
+
+const userIcon = document.querySelector('.user__icon');
+const loginPopup = document.querySelector('.login__popup');
+
+userIcon.addEventListener('click', function(e){
+  loginPopup.classList.toggle('login__popup--active');
+  e.preventDefault();
+})
