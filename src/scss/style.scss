@@ -47,7 +47,7 @@ html{
     background-color: $white-color;
     height: 100%;
     padding: 2rem;
-    width: 45%;
+    min-width: 45%;
     transform: translateX(250%);
     transition: 700ms all ease-in-out;
     visibility: hidden;
@@ -90,7 +90,7 @@ html{
                 align-items: center;
                 width: 100%;
                 margin-top: 60px;
-                padding: 0 0 1rem 0;
+                padding: 0 0 2rem 0;
                 border-bottom: 1px solid $light-dark-color;
                 &:first-child{
                     margin-top: 10px;
@@ -173,6 +173,31 @@ html{
                         font-size: 18px;
                     }
                 }
+            }
+        }
+        .shopping__price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            .price__title{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .price__money{
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        .shopping__buttons{
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            button{
+                padding: 16px 38px;
+                font-size: 22px;
             }
         }
     }

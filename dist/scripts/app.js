@@ -237,31 +237,19 @@ const shoppingSidebar = document.querySelector('.shopping__sidebar');
 const closeBtn = document.querySelector('.close__btn');
 shopIcon.addEventListener('click', function(e){
   shoppingSidebar.classList.add('menu--active');
+  shoppingSidebar.style.overflow = "scroll";
+  document.body.style.overflow = "hidden";
   e.preventDefault();
 })
 closeBtn.addEventListener('click', function(){
   shoppingSidebar.classList.remove('menu--active');
+  document.body.style.overflow = "auto";
 })
 
-
+//Product counter
 let counter=0;
 let incrementBtn = document.querySelectorAll('.counter__increment');
 let decrementBtn = document.querySelectorAll('.counter__decrement');
 let counterBody = document.querySelectorAll('.counter__body');
 let shoppingBox = document.querySelectorAll('.shopping__box');
-for( let countBody = 0; countBody < counterBody.length; countBody){
-  for(let inc=0; inc< incrementBtn.length; inc++){
-    incrementBtn.addEventListener('click', function(){
-      counterBody.innerHTML = counter;
-      counter+=1; 
-    });
-  }
-  for( let dec = 0; dec<decrementBtn.length; dec++){
-    decrementBtn.addEventListener('click', function(){
-      if(counter>=0){
-        counterBody.innerHTML = counter;
-        counter-=1;
-      }
-    });
-  }
-}
+
