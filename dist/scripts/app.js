@@ -201,7 +201,7 @@ const closeIcon = document.querySelector('.close__icon');
 
 hamburgerIcon.addEventListener('click', function(e){
   sidemenu.classList.add('menu-active');
-  shoppingSidebar.style.overflow = "scroll";
+  sidemenu.style.overflow = "scroll";
   document.body.style.overflow = "hidden";
   e.preventDefault();
 });
