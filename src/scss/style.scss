@@ -41,7 +41,6 @@ html{
 
 .shopping__sidebar{
     position: fixed;
-    display: none;
     top: 0;
     right: 0;
     z-index: 15;
@@ -49,8 +48,17 @@ html{
     height: 100%;
     padding: 2rem;
     width: 45%;
+    transform: translateX(250%);
+    transition: 700ms all ease-in-out;
+    visibility: hidden;
+    &.menu--active{
+        visibility: visible;
+        transform: translateX(0);
+        transition: 700ms all ease-in-out;
+    }
     .shopping__container{
         width: 100%;
+        overflow-y: scroll;
         .shopping__header{
             display: flex;
             justify-content: space-between;
@@ -75,13 +83,15 @@ html{
             }
         }
         .shopping__content{
-            margin-top: 100px;
+            margin-top: 50px;
             .shopping__box{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
                 margin-top: 60px;
+                padding: 0 0 1rem 0;
+                border-bottom: 1px solid $light-dark-color;
                 &:first-child{
                     margin-top: 10px;
                 }
@@ -90,7 +100,6 @@ html{
                     justify-content: flex-start;
                     .shopping__img{
                         position: relative;
-                        width: 25%;
                         .delete__item{
                             position: absolute;
                             width: 20px;
@@ -107,7 +116,8 @@ html{
                             }
                         }
                         img{
-                            width: 100%;
+                            width: 100px;
+                            height: 100px;
                         }
                     }
                     .shopping__about{
@@ -154,6 +164,7 @@ html{
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        cursor: pointer;
                         i{
                             color: $white-color;
                         }

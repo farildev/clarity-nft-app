@@ -233,4 +233,33 @@ userIcon.addEventListener('click', function(e){
 })
 
 const shopIcon = document.querySelector('.shop__icon');
+const shoppingSidebar = document.querySelector('.shopping__sidebar');
+const closeBtn = document.querySelector('.close__btn');
+shopIcon.addEventListener('click', function(e){
+  shoppingSidebar.classList.add('menu--active');
+  e.preventDefault();
+})
+closeBtn.addEventListener('click', function(){
+  shoppingSidebar.classList.remove('menu--active');
+})
+
+
+let counter=0;
+let incrementBtn = document.querySelector('.counter__increment');
+let decrementBtn = document.querySelector('.counter__decrement');
+let counterBody = document.querySelector('.counter__body');
+
+incrementBtn.addEventListener('click', increment);
+decrementBtn.addEventListener('click', decrement);
+
+function increment(){
+  counterBody.innerHTML = counter;
+  counter+=1; 
+}
+
+function decrement(){
+  if(counter>0){
+    counter-=1;
+  }
+}
 
