@@ -249,17 +249,13 @@ let incrementBtn = document.querySelector('.counter__increment');
 let decrementBtn = document.querySelector('.counter__decrement');
 let counterBody = document.querySelector('.counter__body');
 
-incrementBtn.addEventListener('click', increment);
-decrementBtn.addEventListener('click', decrement);
-
-function increment(){
+incrementBtn.addEventListener('click', function(){
   counterBody.innerHTML = counter;
   counter+=1; 
-}
-
-function decrement(){
-  if(counter>0){
+});
+decrementBtn.addEventListener('click', function(){
+  if(counter>=0){
+    counterBody.innerHTML = counter;
     counter-=1;
   }
-}
-
+})
