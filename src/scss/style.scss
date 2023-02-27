@@ -549,6 +549,7 @@ main{
                         color: $dark-color;
                         padding: 0.5rem;
                         border-radius: 50%;
+                        font-size: 14px;
                     }
                     span{
                         color: $green-color;
@@ -800,6 +801,9 @@ main{
                     }
                     .category__name{
                         margin-top: 15px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
                         h3{
                             font-weight: 400;
                             color: $white-color;
@@ -883,6 +887,7 @@ main{
                     .seller__top{
                         width: 100%;
                         height: 100%;
+                        position: relative;
                         .seller__img{
                             height: 50%;
                             img{
@@ -895,8 +900,8 @@ main{
                         }
                         .seller__price{
                             position: absolute;
-                            bottom: 33%;
-                            left: 73%;
+                            bottom: 7%;
+                            right: 7%;
                             background-color: $white-color;
                             border-radius: 5px;
                             filter: blur(70%);
@@ -966,6 +971,7 @@ main{
                     color: $white-color;
                 }
                 .arrival__category{
+                    width: 100%;
                     .arrival__link{
                         margin: 5px;
                         color: $white-color;
@@ -1084,8 +1090,8 @@ main{
                     border-radius: 5px;
                     margin-top: 30px;
                     .sold__img{
-                        width: 35%;
-                        height: 100%;
+                        width: 150px;
+                        height: 150px;
                         transition: 3s ease-in-out;
                         img{
                             height: 100%;
@@ -1179,7 +1185,7 @@ main{
                         h1{
                             font-size: 18px;
                             font-weight: 500;
-                            font-family: inherit;
+                            font-family: "DM Sans", sans-serif;
                             color: $white-color;
                         }
                     }
@@ -1190,7 +1196,8 @@ main{
                             color: $white-color;
                             line-height: 24px;
                             font-size: 16px;
-                            letter-spacing: 0.75px;
+                            font-family: "DM Sans",sans-serif;
+                            letter-spacing: 0.5px;
                         }
                     }
                 }
@@ -1312,6 +1319,7 @@ main{
                     }
                     .blog__name{
                         margin-top: 15px;
+                        width: 100%;
                         h3{
                             font-size: 20px;
                             font-family: inherit;
@@ -1389,6 +1397,9 @@ footer{
                             font-size: 16px;
                         font-family: inherit;
                         color: #acacac;
+                        &:hover{
+                            text-decoration: underline;
+                        }
                         }
                     }
                 }
@@ -1628,6 +1639,22 @@ footer{
     main{
         .banner__section{
             .banner__container{
+                .banner__left{
+                    .icon__text{
+                        i{
+                            padding: 0.3rem;
+                        }
+                        span{
+                            font-size: 15px;
+                        }
+                    }
+                    .banner__header{
+                        h1{
+                            font-size: 40px;
+                            line-height: 54px;
+                        }
+                    }
+                }
                 .banner__right{
                     max-width: 100%;
                     .banner__carousel{
@@ -1636,30 +1663,181 @@ footer{
                 }
             }
         }
+        .category__section{
+            .category__container{
+                .category__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    .category{
+                        font-size: 15px;
+                    }
+                }
+                .category__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                    .category__arrow{
+                        .category__left{
+                            padding: 0.8rem;
+                        }
+                        .category__right{
+                            padding: 0.8rem;
+                        }
+                    }
+                }
+                .category__carousel{
+                    .category__box{
+                        padding: 0.8rem;
+                        .category__name{
+                            h3{
+                                font-size: 16px;
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+        .seller__section{
+            .seller__container{
+                .seller__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                .seller__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                    .seller__arrow{
+                        .arrow__left{
+                            padding: 0.8rem;
+                        }
+                        .arrow__right{
+                            padding: 0.8rem ;
+                        }
+                    }
+                }
+            }
+        }
+        .arrival__section{
+            .arrival__container{
+                .arrival__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                .arrival__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                    .arrival__category{
+                        border-radius: 5px;
+                        padding: 1rem;
+                        border: 1px solid $green-color;
+                        .arrival__link{
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
         .sold__section{
             .sold__container{
+                .sold__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                .sold__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                }
                 .sold__product{
                     .sold__box{
                         width: 100%;
+                        .sold__about{
+                            width: 80%;
+                        }
                     }
                 }
             }
         }
         .nft__section{
             .nft__container{
+                .nft__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                }
                 .nft__content{
                     .nft__box{
                         width: 100%;
+                        .nft__name{
+                            h1{
+                                font-size: 16px;
+                            }
+                        }
+                        .nft__title{
+                            p{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .video__section{
+            .video__container{
+                .video__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                .video__header{
+                    h1{
+                        font-size: 28px;
                     }
                 }
             }
         }
         .blog__section{
             .blog__container{
+                .blog__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                }
                 .blog__content{
                     flex-wrap: wrap;
                     .blog__box{
                         width: 100%;
+                        .blog__img{
+
+                        }
+                        .blog__name{
+                            h3{
+                                font-size: 18px;
+                            }
+                        }
+                        .blog__link{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
                     }
                 }
             }
@@ -1667,7 +1845,20 @@ footer{
     }
 }
 @media(max-width:600px){
-    
+    main{
+        .banner__section{
+            .banner__container{
+                .banner__left{
+                    .icon__text{
+
+                    }
+                    .banner__header{
+                        
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width:480px){
     header{
