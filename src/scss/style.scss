@@ -44,7 +44,7 @@ html{
     top: 0;
     right: 0;
     z-index: 15;
-    background-color: $white-color;
+    background-color: $dark-color;
     height: 100%;
     padding: 2rem;
     min-width: 45%;
@@ -67,9 +67,10 @@ html{
             padding: 0 0 20px 0;
             h1{
                 font-size: 24px;
+                color: $white-color;
             }
             .close__btn{
-                background-color: $dark-color;
+                background-color: $white-color;
                 padding: 0.5rem;
                 border-radius: 50%;
                 display: flex;
@@ -77,7 +78,7 @@ html{
                 align-items: center;
                 cursor: pointer;
                 i{
-                    color: $white-color;
+                    color: $dark-color;
                     font-size: 24px;
                 }
             }
@@ -98,6 +99,7 @@ html{
                 .shopping__details{
                     display: flex;
                     justify-content: flex-start;
+                    margin: 0 10px;
                     .shopping__img{
                         position: relative;
                         .delete__item{
@@ -105,12 +107,15 @@ html{
                             width: 20px;
                             height: 20px;
                             border-radius: 50%;
-                            background-color: $dark-color;
-                            color: $white-color;
+                            background-color: $white-color;
+                            color: $dark-color;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             padding: 0.5rem;
+                            top: -5px;
+                            left: -5px;
+                            cursor: pointer;
                             i{
                                 font-size: 20px;
                             }
@@ -128,24 +133,27 @@ html{
                             .rate__icons{
                                 i{
                                     font-size: 12px;
-                                    color: rgb(221, 221, 0);
+                                    color: $green-color;
                                 }
                             }
                             .rate__point{
                                 margin-left: 5px;
                                 font-size: 12px;
+                                color: $white-color;
                             }
                         }
                         .product__name{
                             margin-top: 10px;
                             span{
                                 font-weight: 700;
+                                color: $white-color;
                                 font-size: 16px;
                             }
                         }
                         .product__price{
                             margin-top: 15px;
                             span{
+                                color: $white-color;
                                 font-size: 22px;
                             }
                         }
@@ -157,7 +165,7 @@ html{
                     align-items: center;
                     .counter{
                         margin: 0 10px;
-                        background-color: $dark-color;
+                        background-color: $green-color;
                         width: 30px;
                         height: 30px;
                         border-radius: 50%;
@@ -166,11 +174,12 @@ html{
                         justify-content: center;
                         cursor: pointer;
                         i{
-                            color: $white-color;
+                            color: $dark-color;
                         }
                     }
                     .counter__body{
                         font-size: 18px;
+                        color: $white-color;
                     }
                 }
             }
@@ -183,21 +192,36 @@ html{
             .price__title{
                 font-size: 20px;
                 font-weight: 700;
+                color: $white-color;
             }
             .price__money{
                 font-size: 20px;
                 font-weight: 500;
+                color: $white-color ;
             }
         }
         .shopping__buttons{
             margin-top: 30px;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
-            button{
+            .btn{
                 padding: 16px 38px;
                 font-size: 22px;
+                border-radius: 5px;
+                font-family: 'DM Sans', sans-serif;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                font-weight: 500;
+            }
+            .view__btn{
+                background-color: $green-color;
+            }
+            .check__btn{
+                background-color: $white-color;
+                margin-left: 40px;
             }
         }
     }
@@ -278,7 +302,7 @@ html{
     right: 0;
     z-index: 10;
     background-color: $green-color;
-    width: 30%;
+    min-width: 30%;
     height: 100vh;
     visibility: visible;
     transform: translateX(100%);

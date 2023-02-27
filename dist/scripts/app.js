@@ -201,10 +201,13 @@ const closeIcon = document.querySelector('.close__icon');
 
 hamburgerIcon.addEventListener('click', function(e){
   sidemenu.classList.add('menu-active');
+  shoppingSidebar.style.overflow = "scroll";
+  document.body.style.overflow = "hidden";
   e.preventDefault();
 });
 closeIcon.addEventListener('click', function(e){
   sidemenu.classList.remove('menu-active');
+  document.body.style.overflow = "auto";
   e.stopPropagation();
 });
 
