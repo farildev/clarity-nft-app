@@ -245,17 +245,23 @@ closeBtn.addEventListener('click', function(){
 
 
 let counter=0;
-let incrementBtn = document.querySelector('.counter__increment');
-let decrementBtn = document.querySelector('.counter__decrement');
-let counterBody = document.querySelector('.counter__body');
-
-incrementBtn.addEventListener('click', function(){
-  counterBody.innerHTML = counter;
-  counter+=1; 
-});
-decrementBtn.addEventListener('click', function(){
-  if(counter>=0){
-    counterBody.innerHTML = counter;
-    counter-=1;
+let incrementBtn = document.querySelectorAll('.counter__increment');
+let decrementBtn = document.querySelectorAll('.counter__decrement');
+let counterBody = document.querySelectorAll('.counter__body');
+let shoppingBox = document.querySelectorAll('.shopping__box');
+for( let countBody = 0; countBody < counterBody.length; countBody){
+  for(let inc=0; inc< incrementBtn.length; inc++){
+    incrementBtn.addEventListener('click', function(){
+      counterBody.innerHTML = counter;
+      counter+=1; 
+    });
   }
-})
+  for( let dec = 0; dec<decrementBtn.length; dec++){
+    decrementBtn.addEventListener('click', function(){
+      if(counter>=0){
+        counterBody.innerHTML = counter;
+        counter-=1;
+      }
+    });
+  }
+}
