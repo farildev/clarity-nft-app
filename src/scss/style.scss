@@ -426,7 +426,7 @@ header{
                             padding: 10px;
                             font-family: inherit;
                             font-weight: 500;
-                            font-size: 14px;
+                            font-size: 16px;
                             color: $dark-color;
                             display: block;
                             transition: 300ms all ease-in-out;
@@ -971,7 +971,6 @@ main{
                     color: $white-color;
                 }
                 .arrival__category{
-                    width: 100%;
                     .arrival__link{
                         margin: 5px;
                         color: $white-color;
@@ -1854,6 +1853,31 @@ footer{
                     }
                     .banner__header{
                         
+                    }
+                }
+            }
+        }
+        .arrival__section{
+            .arrival__container{
+                .arrival__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    span{
+                        font-size: 15px;
+                    }
+                }
+                .arrival__header{
+                    h1{
+                        font-size: 28px;
+                    }
+                    .arrival__category{
+                        border-radius: 5px;
+                        padding: 1rem;
+                        border: 1px solid $green-color;
+                        .arrival__link{
+                            color: $white-color;
+                        }
                     }
                 }
             }
