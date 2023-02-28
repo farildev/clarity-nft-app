@@ -24,9 +24,11 @@ main{
                     .product{
                         height: 100%;
                         padding: 15px;
+                        min-width: auto;
                         h2{
                             font-weight: 500;
                             font-size: 22px;
+                            text-align: center;
                         }
                     }
                 }
@@ -43,10 +45,12 @@ main{
                         .product{   
                             height: 100%;
                             padding: 15px;
+                            min-width: auto;
                             h2{
                                 font-weight: 400;
                                 font-size: 22px;
                                 color: $white-color;
+                                text-align: center;
                             }
                         }
                         .product__remove__btn{
