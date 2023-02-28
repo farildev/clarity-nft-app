@@ -6,6 +6,9 @@ $dark-color: #1c1c1c;
 $white-color: #ffffff;
 $blue-color: #007bff;
 
+@import '_wishlist.scss';
+
+
 *{
     padding: 0;
     margin: 0;
