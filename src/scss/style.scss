@@ -1827,9 +1827,6 @@ footer{
                     flex-wrap: wrap;
                     .blog__box{
                         width: 100%;
-                        .blog__img{
-
-                        }
                         .blog__name{
                             h3{
                                 font-size: 18px;
@@ -1848,18 +1845,6 @@ footer{
 }
 @media(max-width:600px){
     main{
-        .banner__section{
-            .banner__container{
-                .banner__left{
-                    .icon__text{
-
-                    }
-                    .banner__header{
-                        
-                    }
-                }
-            }
-        }
         .arrival__section{
             .arrival__container{
                 .arrival__title{
@@ -1926,6 +1911,78 @@ footer{
                 }
                 .check__btn{
                     margin-top: 15px;
+                }
+            }
+        }
+    }
+    main{
+        .banner__section{
+            .banner__container{
+                .banner__left{
+                    .icon__text{
+                        i{
+                            padding: 0.3rem;
+                        }
+                        span{
+                            font-size: 14px;
+                        }
+                    }
+                    .banner__header{
+                        h1{
+                            font-size: 32px;
+                            line-height: 44px;
+                        }
+                    }
+                    .banner__btn{
+                        button{
+                            padding: 1rem 1.5rem;
+                            font-size: 14px;
+                            i{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                .banner__right{
+                    max-width: 100%;
+                    .banner__carousel{
+                        padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+        .category__section{
+            .category__container{
+                .category__title{
+                    i{
+                        padding: 0.3rem;
+                    }
+                    .category{
+                        font-size: 14px;
+                    }
+                }
+                .category__header{
+                    h1{
+                        font-size: 24px;
+                    }
+                    .category__arrow{
+                        .category__left{
+                            padding: 0.6rem;
+                        }
+                        .category__right{
+                            padding: 0.6rem;
+                        }
+                    }
+                }
+                .category__carousel{
+                    .category__box{
+                        padding: 0.5rem;
+                        .category__name{
+                            h3{
+                                font-size: 16px;
+                            }
+                        }
+                    } 
                 }
             }
         }
