@@ -213,17 +213,14 @@ closeIcon.addEventListener('click', function(e){
 
 const sideMenuLink = document.querySelectorAll('.sidemenu__link');
 const sideDropdown = document.querySelectorAll('.sidemenu__dropdown');
-for(let c=0; c < sideMenuLink.length; c++){
-  sideMenuLink[c].addEventListener('click', function(e){
-    for(let d=0; d<sideMenuLink.length; d++){
-      sideMenuLink[d].classList.remove('sidemenu--active');
-      for(let a = 0; a<sideDropdown.length; a++){
-        sideDropdown[a].classList.add('sidemenu--active');
-      }
+for(let item = 0; item<sideMenuLink.length; item++){
+  sideMenuLink[item].addEventListener('click', function(e){
+    for( let itemDel = 0; itemDel<sideMenuLink.length; itemDel++){
+      sideMenuLink[itemDel].classList.remove('sidemenu--active');
     }
-    sideMenuLink[c].classList.add('sidemenu--active');
+    this.classList.add('sidemenu--active');
     e.preventDefault();
-  });
+  })
 };
 
 
