@@ -248,8 +248,24 @@ closeBtn.addEventListener('click', function(){
 
 //Product counter
 let counter=0;
-let incrementBtn = document.querySelectorAll('.counter__increment');
-let decrementBtn = document.querySelectorAll('.counter__decrement');
-let counterBody = document.querySelectorAll('.counter__body');
-let shoppingBox = document.querySelectorAll('.shopping__box');
+let incrementBtn = document.querySelector('.counter__increment');
+let decrementBtn = document.querySelector('.counter__decrement');
+let counterBody = document.querySelector('.counter__body');
+let shoppingBox = document.querySelector('.shopping__box');
+
+incrementBtn.addEventListener('click', increment);
+decrementBtn.addEventListener('click', decrement);
+
+function increment(){
+  counterBody.innerHTML = counter;
+  counter+=1;
+}
+
+function decrement(){
+  if(counter > 0){
+    counter-=1;
+  }
+  counterBody.innerHTML = counter;
+}
+
 
