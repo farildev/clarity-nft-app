@@ -268,4 +268,8 @@ function decrement(){
   counterBody.innerHTML = counter;
 }
 
-
+function deleteItem(e){
+  if(e.target.className = "delete__item"){
+    e.target.parentElement.parentElement.remove();
+  }
+}
