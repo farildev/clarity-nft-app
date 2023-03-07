@@ -268,6 +268,13 @@ function decrement(){
   counterBody.innerHTML = counter;
 }
 
+const deleteItemBtn = document.querySelectorAll('.delete__item');
+const subtotal = document.querySelector('.price__money');
+for (let a=0; a<deleteItemBtn.length; a++){
+  deleteItemBtn[a].addEventListener('click', function(e){
+    e.target.parentNode.parentNode.parentNode.parentNode.remove();
+  })
+}
 
 //Delete item from basket
 const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
@@ -278,5 +285,5 @@ function deleteProductFromBasket(e){
 }
 
 for (let i = 0 ; i < deleteProductBtn.length; i++) {
-   deleteProductBtn[i].addEventListener("click", deleteProductFromBasket, false); 
+   deleteProductBtn[i].addEventListener("click", deleteProductFromBasket, false   ); 
 }
