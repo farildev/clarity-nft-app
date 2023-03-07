@@ -268,8 +268,15 @@ function decrement(){
   counterBody.innerHTML = counter;
 }
 
-function deleteItem(e){
-  if(e.target.className = "delete__item"){
-    e.target.parentElement.parentElement.remove();
-  }
+
+//Delete item from basket
+const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
+const wishlistArea = document.querySelectorAll('.wishlist__product__area');
+
+for(let btn=0; btn<deleteProductBtn.length; btn++){
+  deleteProductBtn[btn].addEventListener('click', function(){
+    for(let area=0; area<wishlistArea.length; area++){
+      wishlistArea[area].ELEMENT_NODE.remove;
+    }
+  })
 }
