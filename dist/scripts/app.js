@@ -281,7 +281,7 @@ const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
 
 function deleteProductFromBasket(e){
   let target = e.target;
-  target.parentElement.parentElement.parentElement.remove();
+  target.parentNode.parentNode.parentNode.remove();
 }
 
 for (let i = 0 ; i < deleteProductBtn.length; i++) {
