@@ -271,10 +271,12 @@ function decrement(){
 
 //Delete item from basket
 const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
-const wishlistArea = document.querySelectorAll('.wishlist__product__area');
 
-for(let i = 0; i<deleteProductBtn.length; i++){
-  deleteProductBtn[i].addEventListener('click', function(e){
-    e.target.parentElement.parentElement.parentElement.remove();
-  })
+function deleteProductFromBasket(e){
+  let target = e.target;
+  target.parentElement.parentElement.parentElement.remove();
+}
+
+for (let i = 0 ; i < deleteProductBtn.length; i++) {
+   deleteProductBtn[i].addEventListener("click", deleteProductFromBasket, false); 
 }
