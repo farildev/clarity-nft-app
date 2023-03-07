@@ -194,7 +194,7 @@ $('.banner__carousel').slick({
     });
   }
 
-
+//Sidebar Menu
 const sidemenu = document.querySelector('.sidemenu__section');
 const hamburgerIcon = document.querySelector('.bx-menu');
 const closeIcon = document.querySelector('.close__icon');
@@ -211,6 +211,7 @@ closeIcon.addEventListener('click', function(e){
   e.stopPropagation();
 });
 
+//Sidemenu Dropdown
 const sideMenuLink = document.querySelectorAll('.sidemenu__link');
 const sideDropdown = document.querySelectorAll('.sidemenu__dropdown');
 for(let item = 0; item<sideMenuLink.length; item++){
@@ -223,7 +224,7 @@ for(let item = 0; item<sideMenuLink.length; item++){
   })
 };
 
-
+//Login Popup
 const userIcon = document.querySelector('.user__icon');
 const loginPopup = document.querySelector('.login__popup');
 
@@ -232,6 +233,7 @@ userIcon.addEventListener('click', function(e){
   e.preventDefault();
 })
 
+//Shopping Sidebar 
 const shopIcon = document.querySelector('.shop__icon');
 const shoppingSidebar = document.querySelector('.shopping__sidebar');
 const closeBtn = document.querySelector('.close__btn');
@@ -246,7 +248,7 @@ closeBtn.addEventListener('click', function(){
   document.body.style.overflow = "auto";
 })
 
-//Product counter
+//Product counter 
 let counter=0;
 let incrementBtn = document.querySelector('.counter__increment');
 let decrementBtn = document.querySelector('.counter__decrement');
@@ -268,13 +270,14 @@ function decrement(){
   counterBody.innerHTML = counter;
 }
 
+//Delete item from shopping side
 const deleteItemBtn = document.querySelectorAll('.delete__item');
 const subtotal = document.querySelector('.price__money');
 for (let a=0; a<deleteItemBtn.length; a++){
   deleteItemBtn[a].addEventListener('click', function(e){
     e.target.parentNode.parentNode.parentNode.parentNode.remove();
   })
-}
+};
 
 //Delete item from basket
 const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
@@ -282,8 +285,8 @@ const deleteProductBtn = document.querySelectorAll('.product__remove__btn');
 function deleteProductFromBasket(e){
   let target = e.target;
   target.parentNode.parentNode.parentNode.remove();
-}
+};
 
 for (let i = 0 ; i < deleteProductBtn.length; i++) {
    deleteProductBtn[i].addEventListener("click", deleteProductFromBasket, false   ); 
-}
+};
